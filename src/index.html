@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <canvas id="my-canvas"></canvas>
+    <section class="container">
+      <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="comp-label" class="badge">comp</div>
+        <span id="user-score">0</span> :
+        <span id="comp-score">0</span>
+      </div>
+      <div>
+        <p class="result">Let's play!</p>
+      </div>
+      <div class="choices">
+        <div class="choice" id="r">
+          <img src="../images/rock.png" alt="hand-rock" />
+        </div>
+        <div class="choice" id="p">
+          <img src="../images/paper.png" alt="hand-rock" />
+        </div>
+        <div class="choice" id="s">
+          <img src="../images/scissors.png" alt="hand-rock" />
+        </div>
+      </div>
+      <div class="moves">
+        <p id="action-message">Make your move!</p>        
+        <p class="movesleft" id="movesleft">Moves : 0</p>
+      </div>
+      <div class="reload">
+        <button class="playAgain" id="playAgain" type="button">Restart</button>
+      </div>
+    </section>
+    <div class="modal" id="endgameModal">
+      <button class="close-modal" id="close-modal">&times;</button>
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="animated-button1" id="restartBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Play again
+      </button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="../node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>

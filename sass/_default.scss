@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500&display=swap');
+
+$colors: (
+  primary: #04131b,
+  primary-light: lighten(#04131b, 3%),
+  primary-dark: darken(rgb(4, 19, 27), 25%),
+  secondary: white,
+  tertiary: crimson,
+  tertiary-light: lighten(crimson, 20%),
+  tertiary-dark: darken(crimson, 20%),
+  winColor: #06b61d,
+  winColor-light: lighten(#06b61d, 30%),
+  winColor-dark: darken(#06b61d, 20%),
+  loseColor: #ff0000,
+  loseColor-light: lighten(#ff0000, 30%),
+  loseColor-dark: darken(#ff0000, 20%),
+  drawColor: #616161,
+  drawColor-light: lighten(#616161, 30%),
+  drawColor-dark: darken(#616161, 20%),
+  blackColor: black,
+);
+
+$padding: 10px;
+$margin: 20px;
+$borders: 3px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$desktop: 480px;
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
