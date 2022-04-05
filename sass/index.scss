@@ -415,7 +415,7 @@ section {
 .green-glow {
   border: ($borders * 1.3) solid color(winColor) !important;
   box-shadow: 0 0 10px color(winColor-light);
-  @include desktop{
+  @include desktop {
     border-width: ($borders / 2);
   }
 }
@@ -423,7 +423,7 @@ section {
 .red-glow {
   border: ($borders * 1.3) solid color(loseColor) !important;
   box-shadow: 0 0 10px color(loseColor-light);
-  @include desktop{
+  @include desktop {
     border-width: ($borders / 2);
   }
 }
@@ -431,7 +431,7 @@ section {
 .gray-glow {
   border: ($borders * 1.3) solid color(drawColor) !important;
   box-shadow: 0 0 10px color(drawColor-light);
-  @include desktop{
+  @include desktop {
     border-width: ($borders / 2);
   }
 }
