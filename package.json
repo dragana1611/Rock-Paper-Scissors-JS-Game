@@ -2,11 +2,10 @@
   "name": "rock-paper-scissors",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass ./sass/index.scss ./css/style.css --watch",
-    "build": "CI"
+    "start": "sass ./sass/index.scss ./css/style.css --watch"
   },
   "keywords": [],
   "author": "Dragana Petrovic",
